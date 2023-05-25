@@ -1,22 +1,22 @@
 -- SUM, COUNT, AVG, MIN E MAX:
 
 -- SUM
-select sum(Receita_Venda) as 'Receita total'
-from pedidos;
+SELECT SUM(Receita_Venda) AS 'Receita total'
+FROM pedidos;
 
 -- COUNT
-select count(Nome) as 'QTD Clientes M'
-from clientes
-where Sexo = 'M';
+SELECT COUNT(Nome) AS 'QTD Clientes M'
+FROM clientes
+WHERE Sexo = 'M';
 
 -- AVG
-select avg(Renda_Anual) as 'Renda anual total'
-from clientes;
+SELECT AVG(Renda_Anual) AS 'Renda anual total'
+FROM clientes;
 
 -- MIN
-select min(Preco_Unit) as 'Preço unitário mínimo'
-from produtos;
+SELECT MIN(Preco_Unit) AS 'Preço unitário mínimo'
+FROM produtos;
 
 -- MAX
-select max(Preco_Unit) as 'Preço unitário mínimo'
-from produtos;
+SELECT MAX(Preco_Unit) AS 'Preço unitário mínimo'
+FROM produtos;
